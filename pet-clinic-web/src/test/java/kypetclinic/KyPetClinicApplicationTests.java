@@ -1,4 +1,4 @@
-package proky.springframework.kypetclinic;
+package kypetclinic;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
