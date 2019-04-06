@@ -1,6 +1,6 @@
 package proky.springframework.kypetclinic.model;
 
-public class Person {
+public class Person extends BaseEntity {
     String firstName;
     String lastName;
 
