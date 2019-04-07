@@ -1,8 +1,8 @@
 package proky.springframework.kypetclinic.model;
 
 public class Person extends BaseEntity {
-    String firstName;
-    String lastName;
+    private String firstName;
+    private String lastName;
 
     public String getFirstName() {
         return firstName;
