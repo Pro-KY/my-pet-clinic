@@ -6,8 +6,6 @@ import proky.springframework.kypetclinic.model.Owner;
 import proky.springframework.kypetclinic.model.Vet;
 import proky.springframework.kypetclinic.services.OwnerService;
 import proky.springframework.kypetclinic.services.VetService;
-import proky.springframework.kypetclinic.services.map.OwnerServiceMap;
-import proky.springframework.kypetclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -15,9 +13,9 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        this.ownerService = new OwnerServiceMap();
-        this.vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

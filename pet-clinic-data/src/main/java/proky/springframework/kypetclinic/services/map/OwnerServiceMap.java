@@ -1,10 +1,12 @@
 package proky.springframework.kypetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import proky.springframework.kypetclinic.model.Owner;
 import proky.springframework.kypetclinic.services.OwnerService;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {

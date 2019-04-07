@@ -1,10 +1,12 @@
 package proky.springframework.kypetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import proky.springframework.kypetclinic.model.Vet;
 import proky.springframework.kypetclinic.services.VetService;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
